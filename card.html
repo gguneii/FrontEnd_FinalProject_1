@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="overlay-body"></div>
+    <header id="header">
+        <div class="shop-page-top">
+            <div class="container-fluid">
+                <div class="row header-top">
+                    <div class="col-lg-3 left">
+                        <ul>
+                            <li>
+                                <a href="about.html">About us</a>
+                            </li>
+                            <li>
+                                <a href="#">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Order Tracking</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-center center p-slider">
+                        <p>Trendy 25silver jewelry, save up 35% off today</p>
+                        <p>Supper Value Deals - Save more with coupons</p>
+                        <p>100% Secure delivery without contacting the courier</p>
+                    </div>
+                    <div class="col-lg-3 right">
+                        <ul>
+                            <li>
+                                <p>Need help? Call Us:<span> + 1800 900</span></p>
+                            </li>
+                            <li>
+                                <a href="#" class="language">English <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="dropdown language">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/flag-fr.png" alt="">
+                                            <span>Français</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/flag-dt.png" alt="">
+                                            <span>Deutsch</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/flag-ru.png" alt="">
+                                            <span>Pусский</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">USD <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="dropdown money">
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/flag-fr.png" alt="">
+                                            <span>INR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/flag-dt.png" alt="">
+                                            <span>MBP</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="images/flag-ru.png" alt="">
+                                            <span>EU</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-top-middle">
+            <div class="row header-middle">
+                <div class="col-lg-2 left">
+                    <div class="logo">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 center">
+                    <form action="#" id="myform">
+                        <button class="search-slc-btn" onclick="openCloseDp()"><span class="whichCat">All Categories</span> <i class="fa-solid fa-angle-down"></i></button>
+                       <div class="src-inp-slc">
+                        <input type="text" class="drp-inp" onkeyup="filterFunction();">
+                        <div id="search-select">
+                            <a href="#" class="dropdown-item checkedDp">All Categories</a>
+                            <a href="#" class="dropdown-item">Milks and Dairies</a>
+                            <a href="#" class="dropdown-item">Wines &amp; Alcohol</a>
+                            <a href="#" class="dropdown-item">Clothing &amp; Beauty</a>
+                            <a href="#" class="dropdown-item">Pet Foods &amp; Toy</a>
+                            <a href="#" class="dropdown-item">Fast food</a>
+                            <a href="#" class="dropdown-item">Baking material</a>
+                            <a href="#" class="dropdown-item">Vegetables</a>
+                            <a href="#" class="dropdown-item">Fresh Seafood</a>
+                            <a href="#" class="dropdown-item">Noodles &amp; Rice</a>
+                            <a href="#" class="dropdown-item">Ice cream</a>
+                        </div>
+                       </div>
+                        <input type="text" id="search-input" placeholder="Search for items...">
+                        <img src="images/icon-search.png" alt="">
+                    </form>
+                    <div class="loc">
+                        <p><i class="fa-solid fa-location-dot"></i> <span>Your Location</span><i class="fa-solid fa-angle-down"></i></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 right">
+                    <div class="account">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/icon-compare.svg" alt="">
+                                    <sup>3</sup>
+                                    <span>Compare</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/icon-heart.svg" alt="">
+                                    <sup>6</sup>
+                                    <span>Wishlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/icon-cart.svg" alt="">
+                                    <sup class="cart-item-count">0</sup>
+                                    <span>Cart</span>
+                                </a>
+                                <ul class="cart-shopping-basket">
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/icon-user.svg" alt="">
+                                    <span>Account</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom about-header-bottom">
+            <div class="row bottom align-items-center">
+                    <div class="col-lg-2 btn-col">
+                        <button><i class="fa-solid fa-border-all"></i>Trending Categories<i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                    <div class="col-lg-7 list-col">
+                        <ul class="list">
+                            <li>
+                                <a href="#"> <img src="images/icon-hot.svg" alt="">Hot Deals</a>
+                            </li>
+                            <li>
+                                <a href="home.html">Home <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="home.html">Home 1</a></li>
+                                    <li><a href="home.html">Home 2</a></li>
+                                    <li><a href="home.html">Home 3</a></li>
+                                    <li><a href="home.html">Home 4</a></li>
+                                    <li><a href="home.html">Home 5</a></li>
+                                    <li><a href="home.html">Home 6</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="shop.html">Shop <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="shop.html">Shop Grid – Right Sidebar</a></li>
+                                    <li><a href="shop.html">Shop Grid – Left Sidebar</a></li>
+                                    <li><a href="shop.html">Shop List – Right Sidebar</a></li>
+                                    <li><a href="shop.html">Shop List – Left Sidebar</a></li>
+                                    <li><a href="shop.html">Shop - Wide</a></li>
+                                    <li>
+                                        <a href="#">Single Product <i class="fa-solid fa-angle-right"></i></a>
+                                        <ul class="level-menu">
+                                            <li><a href="#">Product – Right Sidebar</a></li>
+                                            <li><a href="#">Product – Left Sidebar</a></li>
+                                            <li><a href="#">Product – No sidebar</a></li>
+                                            <li><a href="#">Product – Vendor Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Shop – Filter</a></li>
+                                    <li><a href="#">Shop – Wishlist</a></li>
+                                    <li><a href="#">Shop – Cart</a></li>
+                                    <li><a href="#">Shop – Checkout</a></li>
+                                    <li><a href="#">Shop – Compare</a></li>
+                                    <li>
+                                        <a href="#">Shop Invoice<i class="fa-solid fa-angle-right"></i></a>
+                                        <ul class="level-menu">
+                                            <li><a href="#">Shop Invoice 1</a></li>
+                                            <li><a href="#">Shop Invoice 2</a></li>
+                                            <li><a href="#">Shop Invoice 3</a></li>
+                                            <li><a href="#">Shop Invoice 4</a></li>
+                                            <li><a href="#">Shop Invoice 5</a></li>
+                                            <li><a href="#">Shop Invoice 6</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Vendors <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Vendors Grid</a></li>
+                                    <li><a href="#">Vendors List</a></li>
+                                    <li><a href="#">Vendor Details 01</a></li>
+                                    <li><a href="#">Vendor Details 02</a></li>
+                                    <li><a href="#">Vendor Dashboard</a></li>
+                                    <li><a href="#">Vendor Guide</a></li>
+                                </ul>
+                            </li>
+                            <li style="position: static;">
+                                <a href="#">Mega menu <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="mega-menu">
+                                    <li class="mega-menu-item">
+                                        <a class="menu-title" href="#">Fruit &amp; Vegetables</a>
+                                        <ul>
+                                            <li><a href="#">Meat &amp; Poultry</a></li>
+                                            <li><a href="#">Fresh Vegetables</a></li>
+                                            <li><a href="#">Herbs &amp; Seasonings</a></li>
+                                            <li><a href="#">Cuts &amp; Sprouts</a></li>
+                                            <li><a href="#">Exotic Fruits &amp; Veggies</a></li>
+                                            <li><a href="#">Packaged Produce</a></li>
+                                        </ul>
+                                    </li>
+                                    <li  class="mega-menu-item">
+                                        <a class="menu-title" href="#">Breakfast &amp; Dairy</a>
+                                        <ul>
+                                            <li><a href="#">Milk &amp; Flavoured Milk</a></li>
+                                            <li><a href="#">Butter and Margarine</a></li>
+                                            <li><a href="#">Eggs Substitutes</a></li>
+                                            <li><a href="#">Marmalades</a></li>
+                                            <li><a href="#">Sour Cream</a></li>
+                                            <li><a href="#">Cheese</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mega-menu-item">
+                                        <a class="menu-title" href="#">Meat &amp; Seafood</a>
+                                        <ul>
+                                            <li><a href="#">Breakfast Sausage</a></li>
+                                            <li><a href="#">Dinner Sausage</a></li>
+                                            <li><a href="#">Chicken</a></li>
+                                            <li><a href="#">Sliced Deli Meat</a></li>
+                                            <li><a href="#">Wild Caught Fillets</a></li>
+                                            <li><a href="#">Crab and Shellfish</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="mega-menu-item">
+                                        <div class="menu-banner-wrap">
+                                            <a href="#"><img src="images/mega-menu.png" alt="Nest"></a>
+                                            <div class="menu-banner-content">
+                                                <h4>Hot deals</h4>
+                                                <h3>
+                                                    Don't miss<br>
+                                                    Trending
+                                                </h3>
+                                                <div class="menu-banner-price">
+                                                    <span class="new-price text-success">Save to 50%</span>
+                                                </div>
+                                                <div class="menu-banner-btn">
+                                                    <a href="#">Shop now</a>
+                                                </div>
+                                            </div>
+                                            <div class="menu-banner-discount">
+                                                <h3>
+                                                    <span>25%</span>
+                                                    off
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Blog Category Grid</a></li>
+                                    <li><a href="#">Blog Category List</a></li>
+                                    <li><a href="#">Blog Category Big</a></li>
+                                    <li><a href="#">Blog Category Wide</a></li>
+                                    <li>
+                                        <a href="#">Single Post <i class="fi-rs-angle-right"></i></a>
+                                        <ul class="level-menu level-menu-modify">
+                                            <li><a href="#">Left Sidebar</a></li>
+                                            <li><a href="#">Right Sidebar</a></li>
+                                            <li><a href="#">No Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Register</a></li>
+                                    <li><a href="#">Purchase Guide</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                </div>
+                <div class="col-lg-3 right">
+                    <div class="connection">
+                        <img src="images/icon-headphone.svg" alt="">
+                        <p>1900 - 888 <span>24/7 Support Center</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-header">
+            <div class="container-fluid">
+                <div class="pager">
+                    <a href="home.html" class="pagerer"><i class="fa-solid fa-house-chimney-user"></i> Home<i class="fa-solid fa-angle-right right"></i></a> 
+                    <span class="pagerer">Shop<i class="fa-solid fa-angle-right right"></i></span>
+                    <span class="pagerer">Cart</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Phone -->
+    <div class="phone-side-menu">
+        <div class="image">
+            <img src="images/logo.svg" alt="">
+            <div class="close">
+                <i class="fa-solid fa-xmark sidebar-close-icon"></i>
+            </div>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Search for items…">
+            <button class="search-btn"><img src="images/icon-search.png" alt=""></button>
+        </div>
+        <div class="navs">
+            <div class="nav-btn">
+                <a href="home.html" class="head-text">Home</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 4</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 5</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 6</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="shop.html" class="head-text">Shop</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle">
+                    <li><a href="shop.html">Shop Grid – Right Sidebar</a></li>
+                    <li><a href="shop.html">Shop Grid – Left Sidebar</a></li>
+                    <li><a href="shop.html">Shop List – Right Sidebar</a></li>
+                    <li><a href="shop.html">Shop List – Left Sidebar</a></li>
+                    <li><a href="shop.html">Shop - Wide</a></li>
+                    <li class="menu-shop-has-children" style="position: relative;">
+                        <a href="product.html" class="head-text2">Single Product</a>
+                            <i class="fa-solid fa-angle-down up-icon2"></i>
+                            <i class="fa-solid fa-angle-up down-icon2" style="display: none;"></i>
+                        <ul class="nav-toggle2">
+                            <li><a href="product.html">Product – Right Sidebar</a></li>
+                            <li><a href="product.html">Product – Left Sidebar</a></li>
+                            <li><a href="product.html">Product – No sidebar</a></li>
+                            <li><a href="product.html">Product – Vendor Infor</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shop.html">Shop – Filter</a></li>
+                    <li><a href="shop.html">Shop – Wishlist</a></li>
+                    <li><a href="shop.html">Shop – Cart</a></li>
+                    <li><a href="shop.html">Shop – Checkout</a></li>
+                    <li><a href="shop.html">Shop – Compare</a></li>
+                    <li class="menu-shop-has-children">
+                            <a href="shop.html"  class="head-text2">Shop Invoice</a>
+                            <i class="fa-solid fa-angle-down up-icon2"></i>
+                            <i class="fa-solid fa-angle-up down-icon2" style="display: none;"></i>
+                        <ul class="nav-toggle2">
+                            <li><a href="shop.html">Shop Invoice 1</a></li>
+                            <li><a href="shop.html">Shop Invoice 2</a></li>
+                            <li><a href="shop.html">Shop Invoice 3</a></li>
+                            <li><a href="shop.html">Shop Invoice 4</a></li>
+                            <li><a href="shop.html">Shop Invoice 5</a></li>
+                            <li><a href="shop.html">Shop Invoice 6</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="" class="head-text">Vendor</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle" style="">
+                    <li><a href="vendors-grid.html">Vendors Grid</a></li>
+                    <li><a href="vendors-list.html">Vendors List</a></li>
+                    <li><a href="vendor-details-1.html">Vendor Details 01</a></li>
+                    <li><a href="vendor-details-2.html">Vendor Details 02</a></li>
+                    <li><a href="vendor-dashboard.html">Vendor Dashboard</a></li>
+                    <li><a href="vendor-guide.html">Vendor Guide</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="#" class="head-text">Mega Menu</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle">
+                    <li class="menu-item-has-children">
+                        <a href="#"  class="head-text2">Women's Fashion</a>
+                        <i class="fa-solid fa-angle-down up-icon2"></i>
+                        <i class="fa-solid fa-angle-up down-icon2" style="display: none;"></i>
+                    <ul class="nav-toggle2">
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Blouses &amp; Shirts</a></li>
+                            <li><a href="#">Hoodies &amp; Sweatshirts</a></li>
+                            <li><a href="#">Women's Sets</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="head-text2">Men's Fashion</a>
+                        <i class="fa-solid fa-angle-down up-icon2"></i>
+                        <i class="fa-solid fa-angle-up down-icon2" style="display: none;"></i>
+                    <ul class="nav-toggle2">
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Casual Faux Leather</a></li>
+                            <li><a href="#">Genuine Leather</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#" class="head-text2">Technology</a>
+                        <i class="fa-solid fa-angle-down up-icon2"></i>
+                        <i class="fa-solid fa-angle-up down-icon2" style="display: none;"></i>
+                    <ul class="nav-toggle2">
+                            <li><a href="#">Gaming Laptops</a></li>
+                            <li><a href="#">Ultraslim Laptops</a></li>
+                            <li><a href="#">Tablets</a></li>
+                            <li><a href="#">Laptop Accessories</a></li>
+                            <li><a href="#">Tablet Accessories</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="#" class="head-text">Blog</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle">
+                    <li><a href="#">Blog Category Grid</a></li>
+                    <li><a href="#">Blog Category List</a></li>
+                    <li><a href="#">Blog Category Big</a></li>
+                    <li><a href="#">Blog Category Wide</a></li>
+                    <li class="menu-item-has-children">
+                        <a href="#"  class="head-text2">Single Product Layout</a>
+                        <i class="fa-solid fa-angle-down up-icon2"></i>
+                        <i class="fa-solid fa-angle-up down-icon2" style="display: none;"></i>
+                    <ul class="nav-toggle2">
+                            <li><a href="#">Left Sidebar</a></li>
+                            <li><a href="#">Right Sidebar</a></li>
+                            <li><a href="#">No Sidebar</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="#" class="head-text">Pages</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Purchase Guide</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">404 Page</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <a href="#" class="head-text">language</a>
+                <i class="fa-solid fa-angle-down up-icon"></i>
+                <i class="fa-solid fa-angle-up down-icon" style="display: none;"></i>
+                <ul class="nav-toggle">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">French</a></li>
+                    <li><a href="#">German</a></li>
+                    <li><a href="#">Spanish</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="loca">
+            <a href="#"><i class="fa-solid fa-location-dot"></i>Our location</a>
+            <a href="#"><i class="fa-solid fa-user-astronaut"></i>Log in/ Sign up</a>
+            <a href="#"><i class="fa-solid fa-headphones"></i>(+01) - 2345 - 6789</a>
+        </div>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icons">
+                <a href="#">
+                    
+                <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <p class="phone-text">Copyright 2021 © Nest. All rights reserved. Powered by AliThemes.</p>
+    </div>
+    <section id="phone-header">
+        <div class="phone-top-header">
+            <p>Grand opening, <strong>up to 15%</strong> off all items. Only <strong>3 days</strong> left</p>
+        </div>
+        <div class="container-fluid">
+            <div class="phone-header">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa-solid fa-align-justify burger"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="btns">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="images/icon-heart.svg" alt="">
+                                    <sup>6</sup>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="card.html">
+                                    <img src="images/icon-cart.svg" alt="">
+                                    <sup class="cart-item-count">0</sup>
+                                </a>
+                                <ul class="cart-shopping-basket">
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Phone end -->
+    <section id="cart">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 head-text">
+                    <h4>Your Cart</h4>
+                    <p>
+                        <span>There are <span class="countt">0</span> products in your cart</span>
+                        <a href="" class="clear-basket"><i class="fa-solid fa-trash-can"></i>Clear Cart</a>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 col-lg-12 cart-left">
+                    <table class="cart-table">
+                        <thead class="cart-head">
+                            <tr>
+                                <th class="custome-checkbox">
+                                    <input type="checkbox" name="" id="" value="">
+                                </th>
+                                <th scope="col" style="text-align: left;" colspan="2">Product</th>
+                                <th scope="col">Unit Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Subtotal</th>
+                                <th scope="col" class="end">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-body">
+                        </tbody>
+                    </table>
+                    <hr style="margin-top: 50px;">
+                    <div class="update-btn">
+                        <a href="shop.html" class="shop"><i class="fa-solid fa-left-long"></i>Continue shopping</a>
+                        <button class="update"><i class="fa-solid fa-arrows-rotate"></i>Update cart</button>
+                    </div>
+                    <div class="row form-input">
+                        <div class="col-lg-7 form-shipping">
+                            <h4>Calculate Shipping</h4>
+                            <p>Flat rate: <span>5%</span></p>
+                            <form action="" class="myform">
+                                <button class="search-slc-btn" type="button" onclick="openCloseDpC()"><span class="whichCat">All Categories</span> <i class="fa-solid fa-angle-down"></i></button>
+                                <div class="selectInp">
+                                    <input type="text" class="drp-inp2" onkeyup="filterFunctionC();">
+                                <div class="select-option">
+                                    <a href="#" class="dropdown-item checkedDp">All Categories</a>
+                                    <a href="#" class="dropdown-item">Milks and Dairies</a>
+                                    <a href="#" class="dropdown-item">Wines &amp; Alcohol</a>
+                                    <a href="#" class="dropdown-item">Clothing &amp; Beauty</a>
+                                    <a href="#" class="dropdown-item">Pet Foods &amp; Toy</a>
+                                    <a href="#" class="dropdown-item">Fast food</a>
+                                    <a href="#" class="dropdown-item">Baking material</a>
+                                    <a href="#" class="dropdown-item">Vegetables</a>
+                                    <a href="#" class="dropdown-item">Fresh Seafood</a>
+                                    <a href="#" class="dropdown-item">Noodles &amp; Rice</a>
+                                    <a href="#" class="dropdown-item">Ice cream</a>
+                                </div>
+                                </div>
+                            </form>
+                            <div class="inputs">
+                                <input type="text" placeholder="State / Country">
+                                <input type="text" placeholder="PostCode / ZIP">
+                            </div>
+                        </div>
+                        <div class="col-lg-5 form-coupon">
+                            <h4>Apply Coupon</h4>
+                            <p>Using A Promo Code?</p>
+                            <form action="">
+                                <input type="text" placeholder="Enter Your Coupon">
+                                <a href="#"><i class="fa-solid fa-tags"></i>Apply</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-12 cart-right">
+                    <div class="table-responsive">
+                        <table class="table no-border">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h6>Subtotal</h6>
+                                    </td>
+                                    <td class="text-right">
+                                        <h4>$12.31</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col" colspan="2">
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Shipping</h6>
+                                    </td>
+                                    <td class="text-right">
+                                        <h5>Free </h5></td></tr> <tr>
+                                    <td>
+                                        <h6>Estimate for</h6>
+                                    </td>
+                                    <td class="text-right">
+                                        <h5>United Kingdom </h5></td></tr> <tr>
+                                    <td scope="col" colspan="2">
+                                        <hr>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h6>Total</h6>
+                                    </td>
+                                    <td class="text-right">
+                                        <h4>$ <span class="total-price-s">12.31</span></h4>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#">Proceed To CheckOut<i class="fa-solid fa-door-open"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="need">
+        <div class="container-fluid">
+            <div class="row need">
+                <div class="box">
+                    <div class="text">
+                        <h2 class="mb-20">
+                            Stay home &amp; get your daily <br>
+                            needs from our shop
+                        </h2>
+                        <p class="mb-45">Start You'r Daily Shopping with <span class="text-brand">Nest Mart</span></p>
+                        <form class="myform" action="">
+                            <input type="email" placeholder="Your emaill address">
+                            <button class="btn" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                        <img src="images/shop/banner-9.png" alt="">
+                </div>
+            </div>
+            <div class="row featured">
+                <div class="col-lg-1-5">
+                    <div class="box">
+                        <div class="left">
+                            <img src="images/about/provide/icon-1.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <h5>Best prices & offers</h5>
+                            <span>Orders $50 or more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1-5">
+                    <div class="box">
+                        <div class="left">
+                            <img src="images/about/provide/icon-2.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <h5>Free delivery</h5>
+                            <span>24/7 amazing services</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1-5">
+                    <div class="box">
+                        <div class="left">
+                            <img src="images/about/provide/icon-3.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <h5>Great daily deal</h5>
+                            <span>When you sign up</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1-5">
+                    <div class="box">
+                        <div class="left">
+                            <img src="images/about/provide/icon-4.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <h5>Wide assortment</h5>
+                            <span>Mega Discounts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1-5">
+                    <div class="box">
+                        <div class="left">
+                            <img src="images/about/provide/icon-5.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <h5>Easy returns</h5>
+                            <span>Within 30 days</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1-5 last-featured">
+                    <div class="box">
+                        <div class="left">
+                            <img src="images/about/provide/icon-6.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <h5>Safe Delivery</h5>
+                            <span>Within 30 days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container-fluid">
+            <div class="row footer-top">
+                <ul class="footer-list">
+                    <li class="first-item logo" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
+                        <a href="home.html">
+                            <img src="images/logo.svg" alt="">
+                        </a>
+                        <h6>Awesome grocery store website template</h6>
+                        <ul>
+                            <li>
+                                <img src="images/footer/icon-location.svg" alt="">
+                                <span>Address: 5171 W Campbell Ave undefined Kent, Utah 53127 United States</span>
+                            </li>
+                            <li>
+                                <img src="images/footer/icon-contact.svg" alt="">
+                                <span>Call Us:(+91) - 540-025-124553</span>
+                            </li>
+                            <li>
+                                <img src="images/footer/icon-email-2.svg" alt="">
+                                <span>Email:sale@Nest.com</span>
+                            </li>
+                            <li>
+                                <img src="images/footer/icon-clock.svg" alt="">
+                                <span>Hours:10:00 - 18:00, Mon - Sat</span>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="first-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+                        <h5>Company</h5>
+                        <ul>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Delivery Information</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Support Center</a>
+                            </li>
+                            <li>
+                                <a href="#">Careers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="first-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <h5>Account</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="#">View Cart</a>
+                            </li>
+                            <li>
+                                <a href="#">My Wishlist</a>
+                            </li>
+                            <li>
+                                <a href="#">Track My Order</a>
+                            </li>
+                            <li>
+                                <a href="#">Help Ticket</a>
+                            </li>
+                            <li>
+                                <a href="#">Shipping Details</a>
+                            </li>
+                            <li>
+                                <a href="#">Compare products</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="first-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <h5>Corporate</h5>
+                        <ul>
+                            <li><a href="#">Become a Vendor</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Farm Business</a></li>
+                            <li><a href="#">Farm Careers</a></li>
+                            <li><a href="#">Our Suppliers</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                            <li><a href="#">Promotions</a></li>
+                        </ul>
+                    </li>
+                    <li class="first-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <h5>Popular</h5>
+                        <ul>
+                            <li><a href="#">Milk &amp; Flavoured Milk</a></li>
+                            <li><a href="#">Butter and Margarine</a></li>
+                            <li><a href="#">Eggs Substitutes</a></li>
+                            <li><a href="#">Marmalades</a></li>
+                            <li><a href="#">Sour Cream and Dips</a></li>
+                            <li><a href="#">Tea &amp; Kombucha</a></li>
+                            <li><a href="#">Cheese</a></li>
+                        </ul>
+                    </li>
+                    <li class="first-item image-li" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+                        <h5>Install App</h5>
+                        <p>From App Store or Google Play</p>
+                        <div class="images">
+                            <a href="#">
+                                <img src="images/footer/app-store.jpg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="images/footer/google-play.jpg" alt="">
+                            </a>
+                        </div>
+                        <p>Secured Payment Gateways</p>
+                        <img src="images/footer/payment-method.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="row footer-bottom">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="box1">
+                        <p>© 2021, <span>Nest</span> - HTML Ecommerce Template</p>
+                        <p>All rights reserved</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 box2-2">
+                    <div class="box2">
+                        <div class="text">
+                            <img src="images/footer/phone-call.svg" alt="">
+                            <p>1900 - 6666 <span>Working 8:00 - 22:00</span></p>
+                        </div>
+                        <div class="text">
+                            <img src="images/footer/phone-call.svg" alt="">
+                            <p>1900 - 8888 <span>24/7 Support Center</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6 box3-3">
+                    <div class="box3">
+                        <div class="follow">
+                            <span>Follow Us</span>
+                            <div class="icons">
+                                <a href="#">
+                                    
+                                <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-pinterest-p"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p>Up to 15% discount on your first subscribe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="toTopBtn">
+        <button class="topBtn">
+            <i class="fa-solid fa-up-long"></i>
+        </button>
+    </div>
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center">
+                    <img src="images/preloader.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+</html>

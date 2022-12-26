@@ -1,0 +1,178 @@
+$main-color : #3BB77E;
+$primary-font-color : #7E7E7E;
+$third-font-color: #253D4E;
+$button-back-color: #DEF9EC;
+$first-font-family : 'Lato', sans-serif;
+$second-font-family : 'Quicksand', sans-serif;
+#help{
+    padding: 50px 0;
+    .help{
+        .box{
+            padding-right: 40px;
+        }
+        h3{
+            font-size: 24px;
+            color: $main-color;
+            font-family: $second-font-family;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: $second-font-family;
+            font-size: 48px;
+            font-weight: 700;
+            color: $third-font-color;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+        }
+        p{
+            margin-bottom: 20px;
+            color: #7E7E7E;
+        }
+        h5{
+            font-size: 20px;
+            font-family: $second-font-family;
+            color: $third-font-color;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+}
+#map{
+    padding: 20px 0;
+    .map{
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+#view-map{
+    padding: 30px 0;
+    .view-map{
+        .box{
+            h4{
+                color: $main-color;
+                font-family: $second-font-family;
+                font-weight: 700;
+                letter-spacing: 1px;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 14px;
+                color: $primary-font-color;
+            }
+            a{
+                display: inline-block;
+                border: 1px solid $main-color;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 12px 30px;
+                border-radius: 4px;
+                color: #fff;
+                background-color: #3BB77E;
+                margin-top: 30px;
+                &:hover{
+                    background-color: #FDC040;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
+}
+#my-form{
+    padding: 50px 0;
+    .my-form{
+        padding: 20px 0;
+        .box{
+            h5{
+                font-size: 20px;
+                color: #3BB77E;
+                font-family: $second-font-family;
+                font-weight: 700;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+            h1{
+                font-family: $second-font-family;
+                font-size: 40px;
+                font-weight: 700;
+                color: $third-font-color;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 30px;
+                color: #7E7E7E;
+            }
+            .form{
+                .inp{
+                    padding: 10px;
+                    input{
+                        border: 1px solid #ececec;
+                        border-radius: 10px;
+                        height: 64px;
+                        padding-left: 20px;
+                        font-size: 16px;
+                        width: 100%;
+                    }
+                }
+                .textarea{
+                    margin-bottom: 30px;
+                    textarea{
+                        border: 1px solid #ececec;
+                        border-radius: 10px;
+                        height: 50px;
+                        padding: 10px 10px 10px 20px;
+                        font-size: 16px;
+                        width: 100%;
+                        min-height: 200px;
+                    }
+                }
+                .btn{
+                    font-size: 17px;
+                    font-weight: 500;
+                    padding: 20px 40px;
+                    color: #ffffff;
+                    background-color: $third-font-color;
+                    border-radius: 10px;
+                    font-family: $second-font-family
+                }
+            }
+        }
+        .image{
+            padding: 50px 10px 10px 50px;
+            img{
+                width: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    #my-form{
+        .my-form{
+            .image{
+                display: none;
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    #map{
+        display: none;
+    }
+    #view-map{
+        .view-map{
+            .col-sm-4{
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media ( max-width: 576px){
+    .about-container{
+        width: 100% !important;
+    }
+}
